@@ -129,6 +129,8 @@ internal class ConversationViewController: MessagesViewController, UINavigationC
         ]
         
         imagePicker.delegate = self
+        
+        addAvatarOnNavBar()
     }
     
     
@@ -155,7 +157,7 @@ internal class ConversationViewController: MessagesViewController, UINavigationC
     }
     
     func attachBtn() -> InputBarButtonItem {
-        return makeButton(named: "cam")
+        return makeButton(named: "attach")
             .onTouchUpInside {_ in
             print("attachBtn tapped")
             
@@ -259,6 +261,31 @@ internal class ConversationViewController: MessagesViewController, UINavigationC
         messageInputBar.separatorLine.isHidden = true
         messageInputBar.inputTextView.backgroundColor = UIColor.lightGray
         messageInputBar.backgroundView.backgroundColor = .clear
+    }
+    
+    func addAvatarOnNavBar() {
+        
+        let avatar = AvatarButton.init(frame: CGRect(origin: CGPoint(x:0,y:0), size: CGSize(width:80,height:20)))
+        avatar.setImage(UIImage(named: "talk"), for:.normal)
+        //avatar.setTitle("Talkie", for: .normal)
+        avatar.setTitleColor(.blue, for: .normal)
+        //avatar.contentHorizontalAlignment = .left
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: avatar)
+ /*
+        let yourBackImage = UIImage(named: "ash")
+        self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
+        self.navigationController?.navigationBar.backItem?.title = "Someone"
+        self.navigationItem.leftItemsSupplementBackButton = true
+        *//*
+        let imgBackArrow = UIImage(named: "ash")
+        navigationController?.navigationBar.backIndicatorImage = imgBackArrow?.stretchableImage(withLeftCapWidth: 15, topCapHeight: 30)
+
+        navigationController?.navigationBar.backIndicatorImage = imgBackArrow
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBackArrow
+        
+        navigationItem.leftItemsSupplementBackButton = true */
+       // navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Someone", style: .plain, target: self, action: nil)*/
     }
     
     @objc func handleTyping() {

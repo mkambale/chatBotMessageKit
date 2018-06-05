@@ -10,6 +10,7 @@
 		785E5B7F20B6D022003C1DBE /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785E5B7E20B6D022003C1DBE /* Settings+UserDefaults.swift */; };
 		785E5B8120B6D055003C1DBE /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785E5B8020B6D055003C1DBE /* SampleData.swift */; };
 		7867993720BEB12D009004BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7867993620BEB12D009004BD /* Assets.xcassets */; };
+		7867993920BEE2E5009004BD /* AvatarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867993820BEE2E5009004BD /* AvatarButton.swift */; };
 		78DFD85A20B4216000F3F7BC /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFD85920B4216000F3F7BC /* ConversationViewController.swift */; };
 		78DFD85C20B5594900F3F7BC /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFD85B20B5594800F3F7BC /* MockMessage.swift */; };
 		8B97F5C71F5A33B800F997FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6E4D61F5A292000033301 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		785E5B7E20B6D022003C1DBE /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
 		785E5B8020B6D055003C1DBE /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		7867993620BEB12D009004BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7867993820BEE2E5009004BD /* AvatarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarButton.swift; sourceTree = "<group>"; };
 		78DFD85920B4216000F3F7BC /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		78DFD85B20B5594800F3F7BC /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = SOURCE_ROOT; };
 		8BA624F21F59C0430071E49A /* Chip- Hotel Booking Chatbot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chip- Hotel Booking Chatbot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				78DFD85920B4216000F3F7BC /* ConversationViewController.swift */,
 				785E5B7E20B6D022003C1DBE /* Settings+UserDefaults.swift */,
 				785E5B8020B6D055003C1DBE /* SampleData.swift */,
+				7867993820BEE2E5009004BD /* AvatarButton.swift */,
 			);
 			path = ChatbotHotel;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				8B97F5C71F5A33B800F997FD /* ViewController.swift in Sources */,
 				785E5B7F20B6D022003C1DBE /* Settings+UserDefaults.swift in Sources */,
 				78DFD85A20B4216000F3F7BC /* ConversationViewController.swift in Sources */,
+				7867993920BEE2E5009004BD /* AvatarButton.swift in Sources */,
 				78DFD85C20B5594900F3F7BC /* MockMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
